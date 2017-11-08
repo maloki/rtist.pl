@@ -4,10 +4,14 @@ import { Router, Route, browserHistory, IndexRedirect, IndexRoute } from 'react-
 import App from './App'
 import Container from './container.js'
 import Custom from './custom.js'
+import Home from '../src/home/main.js'
 
 module.exports = (
-  <div>
-    <Route path="/" component={App} />
-    <Route path="/custom" component={Custom} />
-  </div>
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home}/>
+      <Route path="/custom" component={Custom} />
+      <Route path="/container" component={Container} /> 
+    </Route>
+  </Router>
 )

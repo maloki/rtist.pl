@@ -43,8 +43,8 @@ function renderFullPage(html) {
         <title>Rtist - portal dla artystow</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="/public/style/style.css">
-      </head>
+        <link rel="stylesheet" href="/src/styles/styles.css">
+      </head> 
       <body>
         <style>
         </style>
