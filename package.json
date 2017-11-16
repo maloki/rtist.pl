@@ -7,7 +7,8 @@
     "dev": "babel-node server/index.js --presets react,es2015,stage-2",
     "build": "webpack -p",
     "watch": "webpack --watch",
-    "start": "node ./src/index.js"
+    "start": "node ./server/index.js", 
+    "build": "babel lib -d dist --presets es2015,stage-2"
   },
   "engines": {
     "node": "8.1.3"
