@@ -30,6 +30,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 var Wrapper = _styledComponents2.default.div(_templateObject);
 
 var Content = _styledComponents2.default.div(_templateObject2);
+var feedItems = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 var Feed = function (_Component) {
   _inherits(Feed, _Component);
@@ -46,84 +47,85 @@ var Feed = function (_Component) {
       return _react2.default.createElement(
         Wrapper,
         null,
-        _react2.default.createElement(
-          'div',
-          { className: 'feedItem' },
-          _react2.default.createElement(
+        feedItems.map(function (item) {
+          return _react2.default.createElement(
             'div',
-            { className: 'header' },
+            { className: 'feedItem' },
             _react2.default.createElement(
               'div',
-              { className: 'categories' },
+              { className: 'header' },
               _react2.default.createElement(
                 'div',
-                { className: 'category' },
-                '#wiersz'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'author' },
-              _react2.default.createElement(
-                'div',
-                { className: 'avatar' },
-                _react2.default.createElement('img', { src: 'https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p160x160/20664987_1075646799237375_8472224970695419406_n.jpg?oh=5418a82850feea53173d79c781165735&oe=5A617853' })
+                { className: 'categories' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'category' },
+                  '#wiersz'
+                )
               ),
               _react2.default.createElement(
                 'div',
-                { className: 'name' },
-                'Niki Nikita'
+                { className: 'author' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'avatar' },
+                  _react2.default.createElement('img', { src: 'https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p160x160/20664987_1075646799237375_8472224970695419406_n.jpg?oh=5418a82850feea53173d79c781165735&oe=5A617853' })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'name' },
+                  'Niki Nikita'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              Content,
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Remember that piano',
+                _react2.default.createElement('br', null),
+                'So delightful unusual',
+                _react2.default.createElement('br', null),
+                'That classic sensation',
+                _react2.default.createElement('br', null),
+                'Sentimental confusion',
+                _react2.default.createElement('br', null)
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'Used to say',
+                _react2.default.createElement('br', null),
+                'I like Chopin',
+                _react2.default.createElement('br', null),
+                'Love me now and again',
+                _react2.default.createElement('br', null)
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'Rainy days never say goodbye',
+                _react2.default.createElement('br', null),
+                'To desire when we are together',
+                _react2.default.createElement('br', null),
+                'Rainy days growing in your eyes',
+                _react2.default.createElement('br', null),
+                'Tell me where\'s my way'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'showFullOverlay' },
+              _react2.default.createElement(
+                'button',
+                null,
+                'Wiecej'
               )
             )
-          ),
-          _react2.default.createElement(
-            Content,
-            null,
-            _react2.default.createElement(
-              'p',
-              null,
-              'Remember that piano',
-              _react2.default.createElement('br', null),
-              'So delightful unusual',
-              _react2.default.createElement('br', null),
-              'That classic sensation',
-              _react2.default.createElement('br', null),
-              'Sentimental confusion',
-              _react2.default.createElement('br', null)
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Used to say',
-              _react2.default.createElement('br', null),
-              'I like Chopin',
-              _react2.default.createElement('br', null),
-              'Love me now and again',
-              _react2.default.createElement('br', null)
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Rainy days never say goodbye',
-              _react2.default.createElement('br', null),
-              'To desire when we are together',
-              _react2.default.createElement('br', null),
-              'Rainy days growing in your eyes',
-              _react2.default.createElement('br', null),
-              'Tell me where\'s my way'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'showFullOverlay' },
-            _react2.default.createElement(
-              'button',
-              null,
-              'Wiecej'
-            )
-          )
-        ),
-        _react2.default.createElement('div', { className: 'feedItem' })
+          );
+        })
       );
     }
   }]);

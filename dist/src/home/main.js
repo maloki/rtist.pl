@@ -52,6 +52,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 var FeedWrapper = _styledComponents2.default.section(_templateObject);
 
 var ContainerNarrow = _styledComponents2.default.div(_templateObject2);
+var logged = true;
 
 var Main = function (_Component) {
   _inherits(Main, _Component);
@@ -65,12 +66,16 @@ var Main = function (_Component) {
   _createClass(Main, [{
     key: 'render',
     value: function render() {
+      var welcomeMessage = _react2.default.createElement('div', null);
+      if (logged) {} else {
+        welcomeMessage = _react2.default.createElement(_welcomeMessage2.default, null);
+      }
       return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_styled.HeaderFix, null),
-        _react2.default.createElement(_welcomeMessage2.default, null),
+        welcomeMessage,
         _react2.default.createElement(
           ContainerNarrow,
           null,
