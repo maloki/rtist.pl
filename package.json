@@ -10,7 +10,8 @@
     "build": "babel lib -d dist --presets react,es2015,stage-1"
   },
   "engines": {
-    "node": "9.2.0"
+    "node": "9.2.0",
+    "npm": "5.5.1"
   },
   "author": "maloki",
   "license": "ISC",
