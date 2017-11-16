@@ -18,7 +18,6 @@ const Wrapper = styled.div`
 `
 
 const Logo = styled.div`
-  font-size:22px;
   line-height: 40px;
   float:left;
   font-size: 32px;
@@ -104,7 +103,7 @@ class Header extends Component {
             <Navigation>
               <ul>
                 <div className="box">
-                  <Link to="/custom">
+                  <Link to="/login">
                     <li>
                       Zaloguj sie
                     </li>
@@ -115,7 +114,7 @@ class Header extends Component {
                 </div>
                 <div className="box second">
                   <div className="top-line"></div>
-                  <Link to="/custom">
+                  <Link to="/register">
                     <li>
                       Rejestracja
                     </li>

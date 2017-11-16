@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import  {Link} from 'react-router'
 
 const Wrapper = styled.section`
@@ -17,7 +17,7 @@ const Wrapper = styled.section`
       display: inline-block;
       padding:0 15px 14px 15px;
       border-bottom:2px solid rgba(59,171,149, 0.3);
-      font-size:20px;
+      font-size:14px;
       &:hover{
         font-weight: bold;
         border-bottom:2px solid rgba(59,171,149, 0.6);
@@ -63,7 +63,10 @@ const Wrapper = styled.section`
 `
 
 
-class WelcomeMessage extends Component {
+class Categories extends Component {
+    constructor(props) {
+     super(props);
+   }
   render() {
     return (
       <Wrapper>
@@ -110,4 +113,4 @@ class WelcomeMessage extends Component {
   }
 }
 
-export default WelcomeMessage;
+export default Categories;

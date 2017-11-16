@@ -2,12 +2,9 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  width:60%;
-  margin-right:45px;
+  width:70%;
   display:inline-block;
-  margin-top:50px;
   .feedItem{
-    margin-top:30px;
     width:100%;
     min-height: 400px;
     max-height:400px;
@@ -16,8 +13,9 @@ const Wrapper = styled.div`
     box-shadow: 2px 2px 2px #888888;
     position:relative;
     overflow: hidden;
+      margin-bottom:30px;
     &.showFull{
-      max-height:unset; 
+      max-height:unset;
       .showFullOverlay{
         display:none;
       }
