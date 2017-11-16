@@ -8,7 +8,7 @@
     "watch": "webpack --watch",
     "start": "npm run build && node ./dist/server/index.js",
     "build": "babel lib -d dist --presets react,es2015,stage-2"
-  },
+  }, 
   "engines": {
     "node": "8.1.3"
   },
