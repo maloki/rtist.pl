@@ -51,7 +51,7 @@ app.get('*', function (req, res, url) {
 });
 
 function renderFullPage(html) {
-  return '\n    <!doctype html>\n    <html>\n      <head>\n        <title>Rtist - portal dla artystow</title>\n        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">\n        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />\n        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />\n        <link rel="stylesheet" href="/styles/styles.css" />\n      </head>\n      <body>\n        <style>\n        </style>\n        <div id="root">\n          <div class="container-fluid"><div>' + html + '</div></div>\n        </div>\n         <script src="/public/bundle.js"></script>\n      </body>\n    </html>\n    ';
+  return '\n    <!doctype html>\n    <html>\n      <head>\n        <title>Rtist - portal dla artystow</title>\n        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">\n        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />\n        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />\n        <link rel="stylesheet" href="/styles/styles.css" />\n      </head>\n      <body>\n        <style>\n        </style>\n        <div id="root">\n          <div class="container-fluid"><div>' + html + '</div></div>\n        </div>\n         <script src="/lib/public/bundle.js"></script>\n      </body>\n    </html>\n    ';
 }
 app.server.listen(process.env.PORT || 3000);
 console.log("listening");
