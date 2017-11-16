@@ -5,8 +5,8 @@ module.exports = {
     entry: ['./lib/src/index.js'],
     output: {
         path: __dirname,
-        publicPath: '/lib/public/',
-        filename: './lib/public/bundle.js'
+        publicPath: '/public/',
+        filename: './public/bundle.js'
     },
     module: {
         loaders: [
@@ -24,7 +24,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract('style', 'css!sass')
-            },
+            }, 
         ]
     },
     //devtool: 'cheap-module-source-map',
