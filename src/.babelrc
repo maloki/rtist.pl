@@ -1,1 +1,0 @@
-{ "presets": ["react"], "ignore": ["lib/public/bundle.js"] }
