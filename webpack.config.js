@@ -2,7 +2,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: ['./lib/src/index.js'],
+    entry: './lib/src/',
     output: {
         path: __dirname,
         publicPath: '/public/',
@@ -24,7 +24,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract('style', 'css!sass')
-            }, 
+            },
         ]
     },
     //devtool: 'cheap-module-source-map',
